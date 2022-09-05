@@ -1,0 +1,32 @@
+### 1) Signup
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{
+    "name": "alice",
+    "email": "alice@gmail.com",
+    "password": "alice99"
+}
+
+### 2) Login
+POST http://localhost:3003/users/login
+Content-Type: application/json
+
+{
+    "email": "astrodev@gmail.com",
+    "password": "bananinha"
+}
+
+### 3) Create product
+POST http://localhost:3003/products
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2MjMzNTE4NCwiZXhwIjoxNjYyNDIxNTg0fQ.SuGB0M_Hvm5kqu2tFT6bm09F6DY5Ru0HHM1PIGcgeIo
+Content-Type: application/json
+
+{
+    "name": "Casaco cinza",
+    "tag" : "CASACO"
+}
+
+### 4) Get products
+GET http://localhost:3003/products
+
